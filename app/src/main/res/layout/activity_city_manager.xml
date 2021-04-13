@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CityManagerActivity"
+    android:background="@mipmap/bg2">
+<RelativeLayout
+    android:id="@+id/CityManagerActivity_TopLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <ImageView
+        android:id="@+id/CityManagerActivity_back"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@mipmap/back"/>
+    <ImageView
+        android:id="@+id/CityManagerActivity_write"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@mipmap/write"
+        android:layout_alignParentRight="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="城市管理"
+        style="@style/cityWeatherFragmentStyle"
+        android:layout_centerInParent="true"/>
+</RelativeLayout>
+    <ListView
+        android:id="@+id/CityManagerActivity_ListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/CityManagerActivity_TopLayout"
+        android:divider="@null">
+    </ListView>
+    <ImageView
+        android:id="@+id/CityManagerActivity_plus"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@mipmap/plus"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchCityActivity"
+    android:background="@mipmap/bg1">
+<ImageView
+    android:id="@+id/search_search"
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:src="@mipmap/search"
+    android:layout_alignParentRight="true"
+    android:layout_margin="6dp"/>
+    <EditText
+        android:id="@+id/search_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入城市"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:layout_toLeftOf="@+id/search_search"
+        android:background="@drawable/search_bg"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"/>
+    <TextView
+        android:id="@+id/search_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="热门城市"
+        android:layout_below="@+id/search_edit"
+        style="@style/cityWeatherFragmentStyle"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"/>
+     <GridView
+         android:id="@+id/search_gv"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:numColumns="5"
+         android:layout_below="@+id/search_city"/>
+
+</RelativeLayout>

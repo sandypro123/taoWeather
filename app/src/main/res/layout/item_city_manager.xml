@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+<androidx.cardview.widget.CardView
+    android:id="@+id/item_city_manager_CardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="5dp"
+    app:contentPadding="10dp">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<TextView
+    android:id="@+id/item_city_manager_city"
+    android:text="北京"
+    android:textStyle="bold"
+    android:textSize="20dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/item_city_manager_temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:text="12℃"
+        android:layout_alignParentRight="true"/>
+    <TextView
+        android:id="@+id/item_city_manager_condition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="晴"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_toRightOf="@+id/item_city_manager_city"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/item_city_tv_wind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="西南风2级"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_toRightOf="@+id/item_city_manager_condition"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"/>
+</RelativeLayout>
+</androidx.cardview.widget.CardView>
+</LinearLayout>
