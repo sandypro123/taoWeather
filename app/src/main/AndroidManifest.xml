@@ -13,8 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.WeatherDemo"
         android:usesCleartextTraffic="true">
-        <activity android:name=".MoreActivity"></activity>
-        <activity android:name=".Boarding.IntroductoryActivity"></activity>
+        <activity android:name=".IntroduceActivity"></activity>
+        <activity android:name=".MoreActivity" />
+        <activity android:name=".Boarding.IntroductoryActivity" />
         <activity android:name=".DeleteCityActivity" />
         <activity android:name=".SearchCityActivity" />
         <activity android:name=".CityManagerActivity" />

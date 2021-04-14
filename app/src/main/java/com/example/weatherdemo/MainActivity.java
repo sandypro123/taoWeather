@@ -14,8 +14,6 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
-
-import com.example.weatherdemo.Boarding.IntroductoryActivity;
 import com.example.weatherdemo.data.DBManager;
 
 import java.util.ArrayList;
@@ -42,7 +40,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         preferences = getSharedPreferences("count", MODE_PRIVATE);
         int count = preferences.getInt("count", 0);
         if (count == 0) {
-            Intent intent = new Intent(this, IntroductoryActivity.class);
+            Intent intent = new Intent(this,IntroduceActivity.class);
             startActivity(intent);
             finish();
             editor = preferences.edit();
