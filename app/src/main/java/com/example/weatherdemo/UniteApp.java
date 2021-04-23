@@ -11,6 +11,6 @@ public class UniteApp extends Application {
     public void onCreate() {
         super.onCreate();
         x.Ext.init(this);
-        DBManager.initDB(this);
+        DBManager.initDB(this);//全局初始化数据库
     }
 }

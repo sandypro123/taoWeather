@@ -1,5 +1,5 @@
 package com.example.weatherdemo.data;
-
+/*设置数据库要存储哪些信息*/
 public class DataBaseBean {
     private int _id;
     private String city;

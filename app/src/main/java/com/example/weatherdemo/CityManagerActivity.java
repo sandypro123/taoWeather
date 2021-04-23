@@ -17,9 +17,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CityManagerActivity extends AppCompatActivity implements View.OnClickListener {
+    /*定义相关控件*/
     ImageView back, write, addCity;
     ListView cityLV;
-    List<DataBaseBean> mData;
+    List<DataBaseBean> mData;//显示列表的数据源
     private CityManagerAdapter adapter;
 
     @Override

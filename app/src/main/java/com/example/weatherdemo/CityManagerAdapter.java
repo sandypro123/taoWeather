@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
+import com.example.weatherdemo.bean.WeatherBean;
 import com.example.weatherdemo.data.DataBaseBean;
 import com.google.gson.Gson;
 
